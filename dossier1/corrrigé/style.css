@@ -176,7 +176,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXX FIN RESET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     }
     
     #menu-accordeon a {
-        display: inline;
+        display: block;
         text-decoration: none;
         color: #fff;
         padding: 8px 0;
@@ -214,6 +214,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXX FIN RESET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         justify-content: space-between;
         align-items: baseline;
         align-content: space-between;
+        background-color: white;
     }
     
     body {
@@ -223,6 +224,52 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXX FIN RESET XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         grid-template-areas: "nav header" "nav main";
     }
     
-    img {
+    header img {
         height: 30px;
+    }
+    
+    article>img {
+        height: 80px;
+    }
+    
+    .menuhor a i {
+        margin: 5px;
+    }
+    
+    main section,
+    h1 {
+        margin-left: 300px;
+        background-color: rgb(82, 80, 110);
+        display: flex;
+        margin-left: 0 auto;
+    }
+    
+    main article {
+        /* width: 30%; */
+        border: 1px solid rgba(0, 0, 0, .25);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+        text-align: center;
+        margin: 50px;
+        border-radius: 10px;
+        padding: 1.5rem 0;
+        align-items: center;
+    }
+    
+    form {
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        align-content: space-between;
+        /* grid-template-columns: 200vw 200vw;
+        grid-template-rows: 20vw 1fr; */
+    }
+    
+    body main {
+        display: grid;
+        /* grid-template-columns: 200vw 200vw;
+        grid-template-rows: 20vw 1fr; */
+        /* grid-template-areas: "nav header" "nav main"; */
     }
